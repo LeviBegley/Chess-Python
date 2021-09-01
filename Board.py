@@ -49,13 +49,13 @@ class Board:
 #                 else:
 #                     self.board_pieces[i].append("")
 
-        board_pieces = [['r','h','b','q','k','b','h','r'],
-                             ['p','p','p','p','p','p','p','p'],
+        board_pieces = [['Br','Bh','Bb','Bq','Bk','Bb','Bh','Br'],
+                             ['Bf','Bf','Bf','Bf','Bf','Bf','Bf','Bf'],
                              ['','','','','','','','','',''],
                              ['','','','','','','','','',''],
                              ['','','','','','','','','',''],
                              ['','','','','','','','','',''],
-                             ['pw','pw','pw','pw','pw','pw','pw','pw'],
+                             ['fw','fw','fw','fw','fw','fw','fw','fw'],
                              ['rw','hw','bw','qw','kw','bw','hw','rw']]
         self.board_pieces = board_pieces
         print(self.board_pieces)  
@@ -67,6 +67,8 @@ class Board:
             for x, cell in enumerate(col):
                 if "w" in self.board_pieces[y][x]:
                     if "p" in self.board_pieces[y][x]:
+                        screen.blit(wpawn_image, (x*200, y*200))
+                    if "f" in self.board_pieces[y][x]:
                         screen.blit(wpawn_image, (x*200, y*200))
                     if "r" in self.board_pieces[y][x]:
                         screen.blit(wrook_image, (x*200, y*200))
@@ -80,6 +82,8 @@ class Board:
                         screen.blit(wking_image, (x*200, y*200))
                 else:
                     if "p" in self.board_pieces[y][x]:
+                        screen.blit(pawn_image, (x*200, y*200))
+                    if "f" in self.board_pieces[y][x]:
                         screen.blit(pawn_image, (x*200, y*200))
                     if "r" in self.board_pieces[y][x]:
                         screen.blit(rook_image, (x*200, y*200))
