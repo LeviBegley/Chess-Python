@@ -4,7 +4,7 @@ from Board import Board
 from pieces import Pieces
 
 cellsize = 200
-pawn_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\pawn.png")
+
 def main():
     pygame.init()
     

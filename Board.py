@@ -2,18 +2,18 @@ import pygame
 from pieces import Pieces
 
 # piece images
-pawn_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\pawn.png")
-rook_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\rook.png")
-knight_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\knight.png")
-bishop_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\bishop.png")
-queen_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\queen.png")
-king_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\king.png")
-wpawn_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\wpawn.png")
-wrook_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\wrook.png")
-wknight_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\wknight.png")
-wbishop_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\wbishop.png")
-wqueen_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\wqueen.png")
-wking_image = pygame.image.load(r"C:\Users\beglelc\Documents\2021\Comp Sci\Chess\wking.png")
+pawn_image = pygame.image.load(r"pawn.png")
+rook_image = pygame.image.load(r"rook.png")
+knight_image = pygame.image.load(r"knight.png")
+bishop_image = pygame.image.load(r"bishop.png")
+queen_image = pygame.image.load(r"queen.png")
+king_image = pygame.image.load(r"king.png")
+wpawn_image = pygame.image.load(r"wpawn.png")
+wrook_image = pygame.image.load(r"wrook.png")
+wknight_image = pygame.image.load(r"wknight.png")
+wbishop_image = pygame.image.load(r"wbishop.png")
+wqueen_image = pygame.image.load(r"wqueen.png")
+wking_image = pygame.image.load(r"wking.png")
 
 # -=-=-=-=-=-=-=-=-
 class Board:
