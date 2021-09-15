@@ -56,13 +56,7 @@ def main():
                 mouse_down_row = (pos[1] // 200)  # row
                 mode = "pressed"
                 
-                #print(mouse_down_row, mouse_down_column)
-                #print(board.board_pieces[mouse_down_row][mouse_down_column])
-                
-#             if "p" in board.board_pieces[mouse_down_row][mouse_down_column]:
-#                  print("deese")
-
-                 
+      
                  
         
         if event.type == pygame.MOUSEBUTTONUP:
@@ -72,9 +66,6 @@ def main():
                     pos = pygame.mouse.get_pos()
                     mouse_up_column = (pos[0] // 200)  # column
                     mouse_up_row = (pos[1] // 200)  # row
-                    
-    #                 print(mouse_up_row, mouse_up_column)
-                    
 # moves --------------------------------
                     up = mouse_down_row - 1, mouse_down_column
                     down = mouse_down_row + 1, mouse_down_column
@@ -116,10 +107,7 @@ def main():
                                 pawnf_valid_b = [down, down2]
                     except:
                         pass
-# castling ---------------------------------------
-                    #Black king
-
-                                
+   
 # pawn attacking -------------------------------------
                     pawn_attack_w = []
                     pawn_attack_b = []
@@ -146,7 +134,7 @@ def main():
                     
                     en_passant_w = []
                     en_passant_b = []
-#                     if Bf_counter_1 < Bf_counter_2:
+
 
                     if double_black == 1:
                         try:
@@ -262,13 +250,7 @@ def main():
                     pawnf_valid_moves_w = pawnf_valid_w + pawn_attack_w
                     pawnf_valid_moves_b = pawnf_valid_b + pawn_attack_b
                     
-                    
-                    
-                    
-#checks ------------------------------------------------------
-      
-                    
-                    
+                                     
 # Moving/Valid checking code --------------------------------------------------------------------
                     
                     
@@ -431,8 +413,7 @@ def main():
                         valid_checker = mouse_up_row, mouse_up_column
                         print("-----")
                         print(valid_checker)
-#                         res1 = any(valid_checker in sublist for sublist in valid_moves)
-#                         if  res1 == True:
+
                         if valid_checker in valid_moves:
                             print("valid")
                             if 'w' in board.board_pieces[mouse_down_row][mouse_down_column] and 'w' in board.board_pieces[mouse_up_row][mouse_up_column]:                           
@@ -448,8 +429,7 @@ def main():
                         valid_checker = mouse_up_row, mouse_up_column
                         print("-----")
                         print(valid_checker)
-#                         res1 = any(valid_checker in sublist for sublist in valid_moves)
-#                         if  res1 == True:
+
                         if valid_checker in valid_moves:
                             print("valid")
                             if 'B' in board.board_pieces[mouse_down_row][mouse_down_column] and 'B' in board.board_pieces[mouse_up_row][mouse_up_column]:                           
@@ -559,24 +539,11 @@ def main():
 
                     
 
-                    
-                    
-                    
-                    
-                    
-                    
+    
                     print(turn_counter)
                     
                         
-                    
-
-                    
-                        
-
-
-
-                    
-
+        
         
         
         
